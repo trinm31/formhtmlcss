@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./asset/css/style.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form id="survey-form" action="" method="post">
+        <h1 id="title">Application For Permission To Date My Daughter</h1>
+        <p id="description">
+          <b>Note:</b> Form is to be completed at least 21 days prior to date
+        </p>
+
+        <!-- Start Personal Details -->
+        <fieldset>
+          <legend>Personal Details</legend>
+          <div>
+            <label id="name-label" for="">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="user-name"
+              placeholder="Enter Name Here"
+            />
+          </div>
+          <div>
+            <label id="address-label" for="">Address:</label>
+            <input
+              type="address"
+              id="address"
+              name="user-address"
+              placeholder="Enter Address Here"
+            />
+          </div>
+          <div>
+            <label id="Email-label" for="">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="user-email"
+              placeholder="Enter Email Here"
+            />
+          </div>
+          <div>
+            <label id="phone-label" for="">Phone Number:</label>
+            <input
+              type="number"
+              id="phone-number"
+              name="user-phone"
+              placeholder="Enter 10 digits number Here"
+              min="1"
+              max="10"
+            />
+          </div>
+          <!-- Start Radio button -->
+          <div>
+            <label id="gender-label" for="">Gender:</label>
+            <p>
+              <input type="radio" name="gender" value="male" checked />
+              Male<br />
+              <input type="radio" name="gender" value="female" /> Female<br />
+              <input type="radio" name="gender" value="other" /> Other<br />
+            </p>
+          </div>
+          <!-- End Radio button -->
+          <div>
+            <label id="date-label" for="">Date of Proposed:</label>
+            <input type="date" id="date-number" name="user-date" />
+          </div>
+        </fieldset>
+        <!-- End Personal Details -->
+
+        <!-- Start Apply -->
+        <fieldset>
+          <label for="">Check All That Apply</label>
+          <p>
+            <input type="checkbox" name="tattoo" value="tattoo" /> Lorem ipsum
+            dolor sit amet. <br />
+            <input type="checkbox" name="car" value="car" /> Lorem ipsum dolor
+            sit amet. <br />
+            <input type="checkbox" name="tattoo" value="tattoo" /> Lorem ipsum
+            dolor sit amet. <br />
+            <input type="checkbox" name="tattoo" value="tattoo" /> Lorem ipsum
+            dolor sit amet. <br />
+            <input type="checkbox" name="tattoo" value="tattoo" checked /> Lorem
+            ipsum dolor sit amet. <br />
+            <input type="checkbox" name="tattoo" value="tattoo" checked /> Lorem
+            ipsum dolor sit amet. <br />
+            <input type="checkbox" name="tattoo" value="tattoo" checked /> Lorem
+            ipsum dolor sit amet. <br />
+          </p>
+        </fieldset>
+        <!-- End Apply -->
+
+        <!-- Start Study -->
+        <fieldset>
+          <div>
+            <label for="">Political Persuasion:</label>
+            <select id="dropdown">
+              <option value="left">Left Wing</option>
+              <option value="right">right Wing</option>
+              <option value="nazi">Nazi</option>
+            </select>
+          </div>
+          <div>
+            <label for="">Education level:</label>
+            <select id="dropdown2">
+              <option value="university">University</option>
+              <option value="college">College</option>
+              <option value="none">None</option>
+            </select>
+          </div>
+        </fieldset>
+        <!-- End Study -->
+
+        <!-- Start Essay -->
+        <fieldset>
+          <legend>Essay Section</legend>
+          <div>
+            <label
+              >In 50 words or more explain why you want to date my
+              daughter</label
+            >
+            <br />
+            <textarea cols="50" rows="10"></textarea>
+          </div>
+          <div>
+            <label
+              >In 50 words or more explain why you want to date my
+              daughter</label
+            >
+            <br />
+            <textarea cols="50" rows="10"></textarea>
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Corrupti, cupiditate. <input type="file" />
+            </p>
+          </div>
+        </fieldset>
+        <!-- End Essay -->
+        <div id="submitbtn">
+            <button type="submit" id="submit">Send your Application </button</>
+        </div>
+
+      </form>
+    </div>
+  </body>
+</html>
